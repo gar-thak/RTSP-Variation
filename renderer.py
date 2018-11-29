@@ -16,8 +16,8 @@ while True:
 
         if not data: break
 
-        print "Client Says: "+data
-        conn.sendall("Server Says:hi")
+        print "Controller Says: "+data
+        conn.sendall("Renderer Says: DO THINGS")
 
     except socket.error:
         print "Error Occured."
