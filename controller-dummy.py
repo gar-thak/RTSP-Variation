@@ -19,18 +19,18 @@ def Main():
     while True: 
   
         # message sent to server 
-        s.send(message.encode('ascii')) 
+        s.send(message) 
   
         # messaga received from server 
         data = s.recv(1024) 
   
         # print the received message 
         # here it would be a reverse of sent message 
-        print('Received from the the abyss :',str(data.decode('ascii'))) 
+        print('Received from the the abyss :',str(data)) 
   
         # ask the client whether he wants to continue 
-        ans = input('\nDo you want to continue connection?(y/n) :') 
-        if ans == 'y': 
+        ans = input('\nDo you want to continue connection?(1/0) :') 
+        if ans == 1: 
             continue
         else: 
             break
