@@ -1,7 +1,6 @@
 import socket 
   
 # import thread module 
-from _thread import *
 import threading 
   
 print_lock = threading.Lock() 
