@@ -2,6 +2,7 @@ import socket
   
 # import thread module 
 import threading 
+import thread
   
 print_lock = threading.Lock() 
   
@@ -54,7 +55,7 @@ def Main():
         print('Connected to :', addr[0], ':', addr[1]) 
   
         # Start a new thread and return its identifier 
-        start_new_thread(threaded, (c,)) 
+        thread.start_new_thread(threaded, (c,)) 
     s.close() 
   
   
